@@ -1,0 +1,86 @@
+.manngerHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+}
+
+.manngerHeader span {
+  font-size: 16px;
+}
+
+.add, .amtend {
+  position: absolute;
+  top: 50px;
+  left: 2.5%;
+  z-index: 15;
+  width: 90%;
+  height: 200px;
+  border-radius: 20px;
+  background: #17bebb;
+  padding: 10px;
+  text-align: center;
+}
+
+.add .btn, .amtend .btn {
+  margin-top: 10px;
+}
+
+.add .am-list-item.am-input-item.am-list-item-middle, .amtend .am-list-item.am-input-item.am-list-item-middle {
+  background: #99e1e5;
+}
+
+.add .am-list-item, .amtend .am-list-item {
+  background: #99e1e5;
+}
+
+.amtend {
+  height: 120px;
+}
+
+.mark {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.userList {
+  width: 100%;
+  height: auto;
+}
+
+.userList li {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+}
+
+.userList li span {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 16px;
+}
+/*# sourceMappingURL=index.css.map */

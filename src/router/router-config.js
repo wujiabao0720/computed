@@ -1,0 +1,33 @@
+import {LoadAsyncCom,Loading} from '../tools/LoadAsyncCom'
+export let rootData=[
+    {
+        path:"/main",
+        component:LoadAsyncCom(()=>import('../components/main'),Loading),
+        children:[
+            {
+                title:"首页",
+                component:LoadAsyncCom(()=>import('../components/main/Home'),Loading),
+                path:"/home"
+            },
+            {
+                title:"详情",
+                component:LoadAsyncCom(()=>import('../components/main/Detail'),Loading),
+                path:"/detail"
+            },
+            {
+                title:"提交",
+                component:LoadAsyncCom(()=>import('../components/main/Submit'),Loading),
+                path:"/submit"
+            },
+            {
+                title:"结算",
+                component:LoadAsyncCom(()=>import('../components/main/Computed'),Loading),
+                path:"/computed"
+            }
+        ]
+    },
+    {
+        path:"/mannger",
+        component:LoadAsyncCom(()=>import('../components/mannger'),Loading)
+    }
+]
